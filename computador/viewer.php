@@ -1,5 +1,8 @@
 <?php
     require('../bancoDados/conexaoPDO.php');
+    initializeSession("../index.php");
+    require('../function/session.php');
+
     $sql = $pdo->query('SELECT * FROM desktop');
    
     $dados = $sql->fetchAll(PDO::FETCH_ASSOC);
