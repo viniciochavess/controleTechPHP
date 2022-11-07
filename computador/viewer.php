@@ -1,7 +1,7 @@
 <?php
-    require('../bancoDados/conexaoPDO.php');
-    initializeSession("../index.php");
     require('../function/session.php');
+    initializeSession("../index.php");
+    require('../bancoDados/conexaoPDO.php');
 
     $sql = $pdo->query('SELECT * FROM desktop');
    
